@@ -1,4 +1,4 @@
-Chapter 2 - Grid
+## Chapter 2 - Grid
 
 Containers have 15px padding.
 
@@ -43,3 +43,41 @@ Nested rows.
 
 Push and pull
 col-xs-push-1
+
+## Chapter 3 - Basic Bootstrap classes
+
+1.
+Emulate Headlines through classes H1-H6
+There is a style for <small> within <h_>
+Class "small" also exists
+Every paragraph has a 10px margin-bottom originally.
+Class "lead" for text that need to stand out
+These utility classes are all customizable.
+
+2. Inline Text Styles: NOTHING new. Just that Bootstrap changes browser defaults for in-line elements.
+<mark>: light yellow bg, black text. It overwright the default class from the browser.
+<s> and <del>: semantic difference. <ins> for text that has been inserted.
+<small>: font-size is smaller in around 85 percnt.
+
+3.Alignment, transformation, abbreviations
+Classes "text-left", "text-right", "text-center", "text-justify"... "text-nowrap": endless line, without breaking.
+Classes "text-lowercase", "text-uppercase", "text-capitalize"
+<abbr title="Captain">Capt.</abbr>: question mark icon is added by bootstrap
+<abbr title="Federative Republic of Brazil" class="initialism">FRofB</abbr>: uppercase, smaller font 
+
+4. Blockquotes
+Add within blockquote: <footer>Person the quote is from</footer>: stylizes and adds dash.
+class="blockquote-reverse" aligns to the right.
+
+5. Lists
+class "list-unstyled": only affects one of the levels; takes off all style.
+class "list-inline": gets rid of bullets and puts items side by side.
+class "dl-horizontal": for dictionary entries. Really nice looking!
+
+6. Code
+<code>
+<kbd>: Keyboard Tag, for shortcuts. Looks nice!
+<var>: help search engines by identifying variables.
+<pre>: Pre-formatted text. Nice-looking box!
+<samp>: Like <pre>, but without the box. Sample output tag.
+<pre class="pre-scrollable">: Long code. Scrollable. 300px
