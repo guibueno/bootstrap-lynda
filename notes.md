@@ -130,3 +130,63 @@ VISIBILITY-SIZE(-DISPLAY)
 visibility: visible or hidden
 size: xs, sm, md, lg, *print*
 display: block, inline, inline-block, print
+
+### Chapter 5 - Forms
+
+1. Basic form
+Labels: tapping on labels activate elements; screen-readers.
+ID="inputEmail": mobile phones identify it. probably auto-filling.
+Label class="sr-only" only shows up on screen-readers.
+*class="form-control": padding, color, highlight, spacing, 100% width. *
+div class="form-group": separates  labels and inputs among themselves.
+div class="checkbox"
+button class="pull-right"
+
+2. Radio and checkbox
+Div class="checkbox": labels are wrapped with the input; does not need "for" attribute.
+Checkboxes: one and/or more options.
+Class radio-inline: side-by-side. Should be within a form-group div to not mix with following inputs.
+
+3. Inline forms
+Horizontal
+<form class="form-inline">
+sr-only class to hide labels
+Useful for short forms (not many inputs), like search and login forms.
+
+4. Horizontal form
+Great for mobile, 'cause labels are usually hidden when tapped into input field.
+class="control-label": adjusts label to input beautifully
+On mobile devices, labels are placed on top of fields. That's pretty cool!
+
+5. Validation styles
+class= "has-warning", "has-error", "has-success"
+works well with "control-label", so that the label also gets the color
+add class="has-feedback"
+<span class="glyphicon glyphicon-ok form-control-feedback">
+260 halflings at glyphicons.com
+aria-hidden="true": not visible on screen-readers.
+(Lesson does not explain how to activate the success id based on user's input)
+
+6. Input groups
+<span class="input-group-addon">Label</span> within div class="input-group"
+Works at the beginning or at the end.
+Aria-label: label for screen-readers.
+Accessible Rich Internet Application (ARIA)
+Placeholder: not the "value", but an information that is just visually shown.
+<span class="input-group-btn">: an input group, with text inside
+*Nice lesson!*
+
+7. Styles and sizing
+"disabled" attribute/class: changes style and cursor
+<fieldset><legend>Basic Info</legend><input ...> ... </fieldset>
+"readonly" attribute: initial value cannot be changed
+"form-control-static" class: makes paragraphs align like inputs.
+classes input-SIZE and form-group-SIZE, like input-lg, input-sm, ... 
+
+
+8. Icons
+<span class="glyphicon glyphicon-print"></span>, with nothing inside.
+Adjusts to the size of outer tag, like an inline size (within a P) or any Header# size.
+Using <i> (icon tag) is a little controversial. Preferably, span tag.
+add aria-hidden="true" to span, so that screen readers do not read it.
+Works well within buttons as well. Add aria-label to it, if there is no text with it.
