@@ -190,3 +190,97 @@ Adjusts to the size of outer tag, like an inline size (within a P) or any Header
 Using <i> (icon tag) is a little controversial. Preferably, span tag.
 add aria-hidden="true" to span, so that screen readers do not read it.
 Works well within buttons as well. Add aria-label to it, if there is no text with it.
+
+### Chapter 6 - Navigation Components
+
+
+1. Dropdown
+div class="dropdown"
+data-toggle="dropdown"
+*Best lesson so far...*
+<div class="dropdown">
+<div class="btn-group">
+<button type="button" class="btn btn-info">Search Pet Info</button>
+<button type="button" id="pettype" aria-haspopup="true" aria-expanded="false"
+  class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+  <span class="sr-only">Toggle Dropdown</span>
+  </button>
+
+<ul class="dropdown-menu" aria-labeldby="pettype">
+  <li class="dropdown-header">Common</li>
+  <li><a href="#">Cat</a></li>
+  <li><a href="#">Dog</a></li>
+  <li><a href="#">Fish</a></li>
+  <li role="separator" class="divider"></li>
+  <li class="disabled"><a href="#">Birds</a></li>
+  <li><a href="#">Amphibian</a></li>
+  <li><a href="#">Reptile</a></li>
+  <li><a href="#">Other</a></li>
+</ul>
+</div>
+</div>
+
+2. Button groups
+div class="btn-group": unifies buttons; can be button-group-vertical as well.
+role="group": adding roles to tags makes screen-readers identify their functionality.
+labels, on the other hand, makes screen-readers know what to say.
+aria-label="..."
+btn-group within btn-group for each button makes buttons take 100% width.
+
+3. Bootstrap nav
+ul class="nav" nav-tabs, nav-pills, nav-stacked, nav-justified
+li class="active" (active tab)
+li role="presentation", if not within <nav></nav>
+Usually within <nav> outside containers, on top of body.
+<nav class="navbar navbar-default">, 
+or navbar-inverse (black background)
+or navbar-fixed-bottom, navbar-fixed-top
+Use inspect element to know how to stylize it.
+
+4. Navbar
+Brand: any text or icon. Class navbar-brand, goes within navbar-header.
+<p class="navbar-text">A speak-first approach to language learning.</p>
+navbar-left, navbar-right (for Search, for example): essentially, a float attribute.
+button class="navbar-btn": button within navbar, aligned properly.
+
+5. Collapsing navigation
+Hamburger menu
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu"  aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        Wisdom Pets
+      </a>
+    </div>
+<div class="collapse navbar-collapse" id="collapsemenu">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Mission</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Staff</a></li>
+      <li><a href="#">Testimonials</a></li>
+    </ul>    
+</div>
+
+
+6. Breadcrumbs / Pagination
+ul class="breadcrumb"
+(doesn't explain how to set it up properly, it's just a style class)
+pagination:
+<nav>
+<ul class="pager">
+  <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+  <li class="next"><a href="#"><span aria-hidden="true">&rarr;</span> Newer</a></li>
+</ul>
+</nav>
+
+### Chapter 7 - Media Components
+
