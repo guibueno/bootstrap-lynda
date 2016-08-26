@@ -284,3 +284,53 @@ pagination:
 
 ### Chapter 7 - Media Components
 
+1. Jumbotron / Page Header
+div class="page-header"
+div class="jumbotron" (bigger text)
+within container behaves different than with a container within it.
+
+2. Labels / Badges
+<span class="label label-info">new</span>
+label-COLOR (contextual color, as everything else in Bootstrap)
+<span class="badge">4</span>: contextual, that is, changes when, for example, within a colored button.
+
+3. Thumbnail
+class="thumbnail": adjusts image-sizes and adds border.
+class="caption": adjusts content to image.
+
+4. Media Styles
+classes: media-body, media-left/media-right, media-middle/media-bottom (vertical), media-heading, media-object
+
+5. Video / Responsive embeds
+<div class="embed-responsive embed-responsive-4by3/16by9">
+<video class="embed-responsive-item">
+these classes also work with embed, iframes, etc.
+
+### Chapter 8 - Content Containers
+
+1. Styling list groups
+<ul class="list-group">
+  <li class="list-group-item">Cally Reynolds</li>
+</ul>
+Also, span class="badge" looks pretty good.
+Not only <li> can be list-items, but anything else, like buttons or <a> tags.
+Active, disabled... list-group-item-success/(contextual-colors), etc...
+    <h3 class="list-group-item-heading">Medge Ratliff</h3>
+    <p class="list-group-item-text">Lorem ipsum</p>
+
+2. Panels
+Similar to groups and thumbnails, but can be combined with other elements.
+div class="panel panel-default" (or contextual)
+<div class="panel-body">: puts content in a box.
+classes: panel-heading, panel-title, panel-body, panel-footer
+_All these bootstrap styles (panels, lists, thumbnails) function the same: you add a div with its name, then elements within other divs which classes are name-item, name-function, etc._
+*Sanel-primary class looks great.*
+
+3. Wells
+Super simpler version of a panel.
+Box with rounded edge.
+well-lg, well-sm: amount of indentation.
+Alternative to blockquotes.
+
+### Chapter 9 - JavaScript
+
